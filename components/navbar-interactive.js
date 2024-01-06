@@ -182,6 +182,9 @@ const NavbarInteractive = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
+            .navbar-interactive-image {
+              height: auto;
+            }
             .navbar-interactive-desktop-menu {
               display: none;
             }
@@ -206,6 +209,7 @@ const NavbarInteractive = (props) => {
           }
           @media (max-width: 479px) {
             .navbar-interactive-navbar-interactive {
+              height: var(--dl-size-size-medium);
               padding: var(--dl-space-space-unit);
             }
             .navbar-interactive-text {

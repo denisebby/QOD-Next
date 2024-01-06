@@ -104,7 +104,9 @@ const Footer = (props) => {
           @media (max-width: 479px) {
             .footer-footer {
               padding: var(--dl-space-space-unit);
+              align-items: center;
               flex-direction: column;
+              justify-content: center;
             }
           }
         `}
