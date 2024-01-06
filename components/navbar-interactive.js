@@ -174,6 +174,7 @@ const NavbarInteractive = (props) => {
           }
           .navbar-interactive-root-class-name {
             width: 100%;
+            height: var(--dl-size-size-small);
           }
           @media (max-width: 767px) {
             .navbar-interactive-navbar-interactive {
