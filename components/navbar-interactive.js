@@ -83,6 +83,7 @@ const NavbarInteractive = (props) => {
             padding-top: var(--dl-space-space-twounits);
             padding-left: var(--dl-space-space-threeunits);
             border-bottom: 1px solid my-blue;
+            margin-bottom: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-threeunits);
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
