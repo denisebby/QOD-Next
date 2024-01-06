@@ -207,7 +207,8 @@ const NavbarInteractive = (props) => {
               padding: var(--dl-space-space-unit);
             }
             .navbar-interactive-text {
-              font-size: 24px;
+              font-size: 16px;
+              margin-right: var(--dl-space-space-oneandhalfunits);
             }
             .navbar-interactive-mobile-menu {
               padding: 16px;
@@ -226,7 +227,7 @@ NavbarInteractive.defaultProps = {
   Login: 'Sign in',
   image_alt: 'image',
   Register: 'Sign In',
-  text: 'Data Pro Daily\n',
+  text: 'Data Pro Daily',
   image_src: '/external/icons8-hyena-64%20(2)-1500h.png',
   image_src1: '/external/icons8-hyena-64%20(2)-1500h.png',
 }
