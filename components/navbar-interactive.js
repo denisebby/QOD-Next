@@ -45,9 +45,7 @@ const NavbarInteractive = (props) => {
                   src={props.image_src1}
                   className="navbar-interactive-image1"
                 />
-                <span className="Heading navbar-interactive-text1">
-                  {props.text1}
-                </span>
+                <span className="navbar-interactive-text1">{props.text1}</span>
                 <div
                   data-thq="thq-close-menu"
                   className="navbar-interactive-close-menu"
@@ -77,6 +75,7 @@ const NavbarInteractive = (props) => {
           }
           .navbar-interactive-navbar-interactive {
             width: 100%;
+            height: 100%;
             display: flex;
             box-shadow: 0px 1px 3px 0px #36454f;
             align-items: center;
@@ -85,6 +84,7 @@ const NavbarInteractive = (props) => {
             border-bottom: 1px solid my-blue;
             margin-bottom: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-threeunits);
+            flex-direction: row;
             padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
             background-color: var(--dl-color-primary-my-blue);
@@ -154,6 +154,14 @@ const NavbarInteractive = (props) => {
             width: auto;
             object-fit: cover;
           }
+          .navbar-interactive-text1 {
+            font-size: 32px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            line-height: 1.15;
+            text-transform: none;
+            text-decoration: none;
+          }
           .navbar-interactive-close-menu {
             display: flex;
             align-items: center;
@@ -176,6 +184,8 @@ const NavbarInteractive = (props) => {
           .navbar-interactive-root-class-name {
             width: 100%;
             height: var(--dl-size-size-small);
+            margin: 0px;
+            align-self: flex-start;
           }
           @media (max-width: 767px) {
             .navbar-interactive-navbar-interactive {
@@ -197,9 +207,6 @@ const NavbarInteractive = (props) => {
               height: 30vh;
               background-color: var(--dl-color-primary-my-blue);
             }
-            .navbar-interactive-text1 {
-              color: var(--dl-color-gray-white);
-            }
             .navbar-interactive-buttons1 {
               width: 100%;
               align-self: flex-start;
@@ -218,6 +225,10 @@ const NavbarInteractive = (props) => {
             }
             .navbar-interactive-mobile-menu {
               padding: 16px;
+            }
+            .navbar-interactive-text1 {
+              color: #ffffff;
+              font-size: 16px;
             }
           }
         `}
