@@ -18,7 +18,8 @@ const Description = (props) => {
             position: relative;
             align-self: flex-start;
             margin-top: var(--dl-space-space-twounits);
-            align-items: center;
+            align-items: flex-start;
+            padding-left: var(--dl-space-space-unit);
             flex-direction: column;
             justify-content: center;
           }
