@@ -58,10 +58,19 @@ const NavbarInteractive = (props) => {
                   </svg>
                 </div>
               </div>
-              <div className="navbar-interactive-buttons1">
-                <button className="navbar-interactive-login button">
-                  {props.Login}
-                </button>
+            </div>
+            <div className="navbar-interactive-mobilenavoptions">
+              <div className="navbar-interactive-container1">
+                <span>{props.text2}</span>
+              </div>
+              <div className="navbar-interactive-container2">
+                <span>{props.text21}</span>
+              </div>
+              <div className="navbar-interactive-container3">
+                <span>{props.text211}</span>
+              </div>
+              <div className="navbar-interactive-container4">
+                <span>{props.text212}</span>
               </div>
             </div>
           </div>
@@ -171,15 +180,39 @@ const NavbarInteractive = (props) => {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
           }
-          .navbar-interactive-buttons1 {
+          .navbar-interactive-mobilenavoptions {
+            flex: 0 0 auto;
+            width: 100%;
             display: flex;
-            margin-top: var(--dl-space-space-unit);
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
+            align-items: flex-start;
           }
-          .navbar-interactive-login {
-            margin-right: var(--dl-space-space-twounits);
+          .navbar-interactive-container1 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .navbar-interactive-container2 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .navbar-interactive-container3 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
+          }
+          .navbar-interactive-container4 {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
           }
           .navbar-interactive-root-class-name {
             width: 100%;
@@ -204,14 +237,58 @@ const NavbarInteractive = (props) => {
               justify-content: center;
             }
             .navbar-interactive-mobile-menu {
-              height: 30vh;
+              height: auto;
               background-color: var(--dl-color-primary-my-blue);
             }
-            .navbar-interactive-buttons1 {
-              width: 100%;
-              align-self: flex-start;
+            .navbar-interactive-nav {
+              height: 20%;
+            }
+            .navbar-interactive-text1 {
+              color: #ffffff;
+            }
+            .navbar-interactive-mobilenavoptions {
+              height: 80%;
               align-items: center;
+              padding-top: var(--dl-space-space-oneandhalfunits);
+              flex-direction: column;
+              padding-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .navbar-interactive-container1 {
+              width: 40%;
+              height: auto;
+              align-self: center;
+              margin-top: var(--dl-space-space-unit);
+              border-radius: var(--dl-radius-radius-radius4);
+              margin-bottom: var(--dl-space-space-unit);
               justify-content: center;
+              background-color: var(--dl-color-primary-my-blue);
+            }
+            .navbar-interactive-container2 {
+              width: 40%;
+              height: auto;
+              padding: var(--dl-space-space-halfunit);
+              margin-top: var(--dl-space-space-unit);
+              border-radius: var(--dl-radius-radius-radius4);
+              margin-bottom: var(--dl-space-space-unit);
+              background-color: #ffffff;
+            }
+            .navbar-interactive-container3 {
+              width: 40%;
+              height: auto;
+              padding: var(--dl-space-space-halfunit);
+              margin-top: var(--dl-space-space-unit);
+              border-radius: var(--dl-radius-radius-radius4);
+              margin-bottom: var(--dl-space-space-unit);
+              background-color: #ffffff;
+            }
+            .navbar-interactive-container4 {
+              width: 40%;
+              height: auto;
+              padding: var(--dl-space-space-halfunit);
+              margin-top: var(--dl-space-space-unit);
+              border-radius: var(--dl-radius-radius-radius4);
+              margin-bottom: var(--dl-space-space-unit);
+              background-color: #ffffff;
             }
           }
           @media (max-width: 479px) {
@@ -241,24 +318,32 @@ NavbarInteractive.defaultProps = {
   image_alt1: 'image',
   text1: 'Data Pro Daily',
   rootClassName: '',
+  text212: 'Sign Out',
   Login: 'Sign in',
   image_alt: 'image',
+  text211: 'Leaderboard',
   Register: 'Sign In',
   text: 'Data Pro Daily',
-  image_src: '/external/icons8-hyena-64%20(2)-1500h.png',
-  image_src1: '/external/icons8-hyena-64%20(2)-1500h.png',
+  text2: 'Text',
+  image_src: '/external/icons8-hyena-64%20(2)-300h.png',
+  image_src1: '/external/icons8-hyena-64%20(2)-300h.png',
+  text21: 'Welcome!',
 }
 
 NavbarInteractive.propTypes = {
   image_alt1: PropTypes.string,
   text1: PropTypes.string,
   rootClassName: PropTypes.string,
+  text212: PropTypes.string,
   Login: PropTypes.string,
   image_alt: PropTypes.string,
+  text211: PropTypes.string,
   Register: PropTypes.string,
   text: PropTypes.string,
+  text2: PropTypes.string,
   image_src: PropTypes.string,
   image_src1: PropTypes.string,
+  text21: PropTypes.string,
 }
 
 export default NavbarInteractive

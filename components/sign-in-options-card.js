@@ -149,17 +149,17 @@ const SignInOptionsCard = (props) => {
 }
 
 SignInOptionsCard.defaultProps = {
-  text: 'Text',
   text1: 'Google',
-  text2: 'Sign in with',
+  text: 'Text',
   text11: 'Github',
+  text2: 'Sign in with',
 }
 
 SignInOptionsCard.propTypes = {
-  text: PropTypes.string,
   text1: PropTypes.string,
-  text2: PropTypes.string,
+  text: PropTypes.string,
   text11: PropTypes.string,
+  text2: PropTypes.string,
 }
 
 export default SignInOptionsCard

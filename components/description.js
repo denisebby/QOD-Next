@@ -19,7 +19,7 @@ const Description = (props) => {
             align-self: flex-start;
             margin-top: var(--dl-space-space-twounits);
             align-items: center;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
           }
           .description-root-class-name {

@@ -153,7 +153,6 @@ const UserAccountNav = (props) => {
             border-color: #ffffff;
             border-width: 1px;
             padding-left: var(--dl-space-space-unit);
-            border-radius: var(--dl-radius-radius-radius4);
             padding-right: var(--dl-space-space-unit);
             flex-direction: column;
             padding-bottom: var(--dl-space-space-unit);
@@ -194,7 +193,6 @@ const UserAccountNav = (props) => {
             border-color: #ffffff;
             border-width: 1px;
             padding-left: var(--dl-space-space-unit);
-            border-radius: var(--dl-radius-radius-radius4);
             padding-right: var(--dl-space-space-unit);
             padding-bottom: var(--dl-space-space-unit);
           }
@@ -220,17 +218,16 @@ const UserAccountNav = (props) => {
           }
           .user-account-nav-dropdown-toggle3 {
             fill: #595959;
-            color: var(--dl-color-primary-my-blue);
+            color: var(--dl-color-gray-white);
             width: 100%;
             display: inline-flex;
             transition: 0.3s;
             align-items: center;
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-unit);
-            border-radius: var(--dl-radius-radius-radius4);
             padding-right: var(--dl-space-space-unit);
             padding-bottom: var(--dl-space-space-unit);
-            background-color: #ffffff;
+            background-color: var(--dl-color-primary-my-blue);
           }
           .user-account-nav-dropdown-toggle3:hover {
             fill: #fff;
@@ -238,7 +235,7 @@ const UserAccountNav = (props) => {
             background-color: #595959;
           }
           .user-account-nav-text4 {
-            color: var(--dl-color-primary-my-blue);
+            color: var(--dl-color-gray-white);
             width: 100%;
             cursor: pointer;
             display: flex;
